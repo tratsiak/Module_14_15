@@ -661,6 +661,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 580642275}
     m_Modifications:
+    - target: {fileID: 392985779229720876, guid: d30e510bfb6e7d04eb4414345a23b6d1,
+        type: 3}
+      propertyPath: _itemPrefab
+      value: 
+      objectReference: {fileID: 5851266850773793647, guid: eb48d711256d1524f820359d2a2ab2c1,
+        type: 3}
     - target: {fileID: 7557394787940083027, guid: d30e510bfb6e7d04eb4414345a23b6d1,
         type: 3}
       propertyPath: m_Name
@@ -899,6 +905,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red Spawn Point Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 4726576390711910662, guid: 3f691ac65c2433c4ca05f3c5aa440638,
+        type: 3}
+      propertyPath: _itemPrefab
+      value: 
+      objectReference: {fileID: 5851266850773793647, guid: eb48d711256d1524f820359d2a2ab2c1,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -912,6 +924,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 580642275}
     m_Modifications:
+    - target: {fileID: 2446262102973752133, guid: 5c10f648575ff0a4e8aa9d8a8f00748a,
+        type: 3}
+      propertyPath: _itemPrefab
+      value: 
+      objectReference: {fileID: 5851266850773793647, guid: eb48d711256d1524f820359d2a2ab2c1,
+        type: 3}
     - target: {fileID: 5421900387508160553, guid: 5c10f648575ff0a4e8aa9d8a8f00748a,
         type: 3}
       propertyPath: m_LocalPosition.x
