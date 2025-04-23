@@ -14,8 +14,14 @@ public class ItemCollector : MonoBehaviour
 
             if (_item != null)
             {
+                SineWaveRotator rotator = _item.GetComponent<SineWaveRotator>();
+                
+                if (rotator != null)
+                    Destroy(rotator);
+
                 _item.transform.parent = transform;
                 _item.transform.position = _colletedItemPoint.position;
+                _item.transform.rotation = transform.rotation;
             }
         }
     }

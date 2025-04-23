@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2615787486061774909}
   - component: {fileID: 2930586518386255594}
   - component: {fileID: 1607928606430490203}
+  - component: {fileID: 1019222899550532352}
   m_Layer: 0
   m_Name: Sneakers
   m_TagString: Untagged
@@ -70,6 +71,21 @@ MonoBehaviour:
   _effectPrefab: {fileID: 5880797563127281583, guid: 265d3a5ba69981a4698ceabcedf368b0,
     type: 3}
   _speedToAdd: 1
+--- !u!114 &1019222899550532352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7253284489907019155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 339771647247e374ea5886510971e78a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationSpeed: 70
+  _amplitude: 0.3
+  _frequency: 3
 --- !u!1 &8861290427824237053
 GameObject:
   m_ObjectHideFlags: 0
