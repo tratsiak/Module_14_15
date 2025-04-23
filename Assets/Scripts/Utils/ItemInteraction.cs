@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ItemInteraction : MonoBehaviour
 {
-    private const string noItemMessage = "You don't have an item.";
+    private const string NoItemMessage = "You don't have an item.";
     private const KeyCode useItemKey = KeyCode.F;
 
     private void Update()
@@ -18,7 +18,7 @@ public class ItemInteraction : MonoBehaviour
             }
             else
             {
-                Debug.Log(noItemMessage);
+                Debug.Log(NoItemMessage);
             }
         }
     }
