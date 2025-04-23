@@ -2,13 +2,13 @@ using UnityEngine;
 
 public abstract class Item : MonoBehaviour
 {
-    [SerializeField] private ParticleSystem _itemDisappearEffect;
+    [SerializeField] private GameObject _effectPrefab;
 
     public abstract void Use(Character affectedObject);
 
     protected virtual void Remove()
     {
-        //_itemDisappearEffect.Play();
+        Instantiate(_effectPrefab, transform.position, Quaternion.identity);
 
         Destroy(gameObject);
     }

@@ -150,6 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bf98df2bb17a1e4da75fb3042d4aa43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _itemDisappearEffect: {fileID: 0}
+  _effectPrefab: {fileID: 2433282508537954060, guid: 3ef3ae421f71c5c4e97fe12dc2fc6312,
+    type: 3}
   _forceMagnitude: 5
   _timeToExplode: 2

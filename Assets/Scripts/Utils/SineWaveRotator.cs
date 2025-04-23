@@ -10,7 +10,8 @@ public class SineWaveRotator : MonoBehaviour
     {
         transform.Rotate(Vector3.up * _rotationSpeed * Time.deltaTime);
 
-        float newY = transform.position.y + Mathf.Sin(Time.time * _frequency) / 10f * _amplitude; //рср ньхайю
-        transform.position = new Vector3(transform.position.x, newY, transform.position.z);
+        Debug.Log(Mathf.Sin(Time.time));
+        //float newY = Vector3.up.y + Mathf.Sin(Time.time * _frequency) / 10f * _amplitude; //рср ньхайю
+        //transform.position = new Vector3(transform.position.x, newY, transform.position.z);
     }
 }
