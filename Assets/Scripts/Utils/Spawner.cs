@@ -15,10 +15,13 @@ public class Spawner : MonoBehaviour
 
         if (_time >= _cooldown)
         {
-            if (IsOccupied())
+            if (_spawnedItem != null)
             {
-                _time = 0;
-                return;
+                if (IsOccupied())
+                {
+                    _time = 0;
+                    return;
+                }
             }
 
             SpawnItem();

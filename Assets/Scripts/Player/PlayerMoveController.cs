@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Player))]
 [RequireComponent(typeof(CharacterController))]
 [RequireComponent(typeof(Rotator))]
 public class PlayerMoveController : MonoBehaviour
@@ -7,9 +8,7 @@ public class PlayerMoveController : MonoBehaviour
     private const string VerticalAxisName = "Vertical";
     private const string HorizontalAxisName = "Horizontal";
 
-    [SerializeField] private float _speed;
-    [SerializeField] private float _rotationSpeed;
-
+    private Player _player;
     private CharacterController _characterController;
     private Rotator _rotator;
 
@@ -17,6 +16,7 @@ public class PlayerMoveController : MonoBehaviour
 
     private void Awake()
     {
+        _player = GetComponent<Player>();
         _characterController = GetComponent<CharacterController>();
         _rotator = GetComponent<Rotator>();
     }
@@ -28,7 +28,7 @@ public class PlayerMoveController : MonoBehaviour
         if (input.magnitude <= _deadZone)
             return;
 
-        _characterController.Move(input * _speed * Time.deltaTime);
-        _rotator.ProcessRotateTo(input.normalized, _rotationSpeed);
+        _characterController.Move(input * _player.Speed * Time.deltaTime);
+        _rotator.ProcessRotateTo(input.normalized, _player.Speed / 5f);
     }
 }
