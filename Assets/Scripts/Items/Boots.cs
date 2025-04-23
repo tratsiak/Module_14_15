@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Sneakers : Item
+public class Boots : Item
 {
     [SerializeField] private float _speedToAdd;
 
