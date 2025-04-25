@@ -8,12 +8,24 @@ public abstract class Character : MonoBehaviour
     public float Health
     {
         get { return _health; }
-        set { _health = value; }
+        set
+        {
+            if (value < 0)
+                _health = 0;
+            else
+                _health = value;
+        }
     }
 
     public float Speed
     {
         get { return _speed; }
-        set { _speed = value; }
+        set
+        {
+            if (value < 0)
+                _speed = 0;
+            else
+                _speed = value;
+        }
     }
 }
